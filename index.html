@@ -5,10 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <script src="/script.js">async</script>
     <title>Document</title>
 </head>
 <body>
     
-</body>
+
+    
+    <div class="game-container">
+      <div class="player-container">
+        <h2 class="player-title">You</h2>
+        <div class="player-choice-container">
+          <button class="player-choice rock">Rock</button>
+          <button class="player-choice paper">Paper</button>
+          <button class="player-choice scissors">Scissors</button>
+        </div>  
+      </div>
+      <div class="computer-container">
+        <h2 class="computer-title">Computer</h2>
+        <div class="computer-choice-container">
+          <div class="computer-choice"></div>
+        </div>
+      </div>
+      <div class="result-container">
+        <h2 class="result-title">Result</h2>
+        <p class="result-text">Choose your weapon!</p>
+      </div>
+    </div>
+
+    <button class="rematch" onclick="location.reload()">Rematch</button>
+    <script src="script.js"></script>
+  </body>
 </html>
+
