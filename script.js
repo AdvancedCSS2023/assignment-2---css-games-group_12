@@ -66,3 +66,4 @@ shuffle(imgUrls);
 for (let i = 0; i < cards.length; i++) {
   cards[i].querySelector('img').src = imgUrls[i % imgUrls.length];
 }
+
