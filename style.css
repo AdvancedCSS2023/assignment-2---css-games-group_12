@@ -34,7 +34,19 @@ body{
     background: #aaa;
     margin: 0 auto;
     margin-left: 2em;
+    animation: train 12s linear infinite;
 }
+
+
+@keyframes train {
+    0% {
+      transform: translateX(-2000%);
+    }
+    100% {
+      transform: translateX(1200%);
+    }
+  }
+
 
 .card__img {
 	display: block;
