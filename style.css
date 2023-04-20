@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -5,56 +7,51 @@
 }
 
 body{
-    display: flex;
-    flex-direction: row;
+  height: 100vh;
+  text-align: center;
    
 }
 
-h1 {
-	text-align: center;
-	margin-top: 50px;
-	font-size: 40px;
-}
 
-.game-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin-top: 50px;
-    flex-direction: row;
-    
-}
+.page-title {
+    text-align: center;
+    margin-top: 50px;
+	font-size: 40px;
+    font-family: 'Nabla', cursive;
+    margin-bottom: 4em;
+  }
+
 
 .card {
 	width: 100px;
 	height: 100px;
 	margin: 10px;
-	background-color: #f1f1f1;
 	border-radius: 10px;
 	cursor: pointer;
 	position: relative;
-    flex-direction: row ;
-    display: flex;
-    margin: auto;
-    margin-top: 40vh;
+    display: inline-block;
+    position: relative;
+    background: #aaa;
+    margin: 0 auto;
+    margin-left: 2em;
 }
 
-.card img {
+.card__img {
 	display: block;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
-.card-checkbox {
+.card__checkbox {
 	display: none;
 }
 
-.card-checkbox:checked + label {
+.card__checkbox:checked + label {
 	background-color: green;
 }
 
-.card-checkbox:checked ~ .card-checkbox:checked + label {
+.card__checkbox:checked ~ .card__checkbox:checked + label {
 	background-color: green;
 }
 
@@ -80,7 +77,7 @@ h1 {
 	opacity: 1;
 }
 
-.card label {
+.card__label {
 	display: block;
 	position: relative;
 	width: 100%;
@@ -89,7 +86,18 @@ h1 {
 	overflow: hidden;
 }
 
-.card label img {
+.card__label::after {
+    background: rgba(255, 255, 255, 0.8);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+.card__label img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -101,11 +109,11 @@ h1 {
 	z-index: 2;
 }
 
-.card-checkbox:checked + label img {
+.card__checkbox:checked + label img {
 	opacity: 1;
 }
 
-.card-checkbox:checked ~ .card-checkbox:checked + label img {
+.card__checkbox:checked ~ .card-checkbox:checked + label img {
 	opacity: 1;
 }
 
