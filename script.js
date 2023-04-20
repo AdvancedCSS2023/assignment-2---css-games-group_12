@@ -28,7 +28,7 @@ function handleCheck() {
 checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
 
 const cards = document.querySelectorAll('.card__label');
-const imgUrls = [  'https://picsum.photos/200?random=1',  'https://picsum.photos/200?random=2',  'https://picsum.photos/200?random=3', 'https://picsum.photos/200?random=4'];
+const imgUrls = [ './images/african-village.jpeg',  './images/plane.jpeg',  './images/university.jpeg', './images/water.jpeg'];
 
 function shuffle(array) {
   let currentIndex = array.length;
