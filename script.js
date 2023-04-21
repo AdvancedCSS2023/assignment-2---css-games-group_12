@@ -28,7 +28,7 @@ function handleCheck() {
 checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
 
 const cards = document.querySelectorAll('.card__label');
-const imgUrls = [ './images/african-village.jpeg',  './images/plane.jpeg',  './images/university.jpeg', './images/water.jpeg'];
+const img = [ './images/african-village.jpeg',  './images/plane.jpeg',  './images/university.jpeg', './images/water.jpeg'];
 
 function shuffle(array) {
   let currentIndex = array.length;
@@ -45,8 +45,8 @@ function shuffle(array) {
   return array;
 }
 
-shuffle(imgUrls);
+shuffle(img);
 
 for (let i = 0; i < cards.length; i++) {
-  cards[i].querySelector('img').src = imgUrls[i % imgUrls.length];
+  cards[i].querySelector('img').src = img[i % img.length];
 }
