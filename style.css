@@ -7,24 +7,33 @@
 }
 
 body{
-  height: 100vh;
   text-align: center;
-   
+  background-color: #4b2e2e; 
+
 }
 
+.game-container{
+	border: solid goldenrod;
+	max-width: 80%;
+	max-height: 100%;
+	margin: auto;
+	background-image: url(/images/african-background.jpeg);
+	background-repeat: round;
+
+}
 
 .page-title {
     text-align: center;
     margin-top: 50px;
 	font-size: 40px;
     font-family: 'Nabla', cursive;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
   }
 
 
 .card {
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 	margin: 10px;
 	border-radius: 10px;
 	cursor: pointer;
@@ -32,21 +41,9 @@ body{
     display: inline-block;
     position: relative;
     background: #aaa;
-    margin: 0 auto;
-    margin-left: 2em;
-    animation: train 12s linear infinite;
+    margin: 2em;
+	border: solid black;
 }
-
-
-@keyframes train {
-    0% {
-      transform: translateX(-2000%);
-    }
-    100% {
-      transform: translateX(1200%);
-    }
-  }
-
 
 .card__img {
 	display: block;
@@ -139,3 +136,29 @@ body{
 		margin: 0 auto;
 	}
 }
+
+
+img#replay{
+	display: block;
+	margin: 2% auto;
+	max-height: 30%;
+	max-width: 30%;
+	cursor: pointer;
+	margin: 2% auto;
+	}
+
+	img#replay:hover{
+		animation: hover-jump 1s infinite;
+	   }
+	
+	@keyframes hover-jump {
+		0% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-10px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
