@@ -5,19 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memory game</title>
-    <link rel="stylesheet" href="/styles.css" />
+
+    <link rel="stylesheet" href="/style.css" />
+
   </head>
 
   <body>
     <h1 class="page__title">Memory Game</h1>
 
-    <audio autoplay>
-      <source src="./assets/happy-114950.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    
 
-    <div class="game__container">
+    <div class="game-container">
+
       <div class="card">
         <input type="checkbox" class="card__checkbox" id="card1" />
         <label for="card1" class="card__label">
@@ -75,6 +73,7 @@
         </label>
       </div>
     </div>
+
 
     <a href="#" onclick="location.href = location.href + '?t=' + Date.now()">
       <img src="/images/replay.png" id="replay" alt="Play Again Icon" />
