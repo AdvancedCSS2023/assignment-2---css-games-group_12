@@ -1,20 +1,11 @@
+
 # assignment-2---css-games-group_12
 
-assignment-2---css-games-group_12 created by GitHub Classroom
 
+The project is a memory card game where the player needs to match pairs of cards with identical images. It first defines a function to handle the clicking of checkboxes, which checks if two checkboxes have been clicked and matches the images on the cards. If they match, the checkboxes remain checked, and if they don't match, they become unchecked after a second. The code then shuffles an array of image URLs and assigns them to the cards, creating randomized cards for the game.
 
-* What the project does
+This game is useful because it creates an interactive game that can provide entertainment and cognitive stimulation for users. Memory games are also a popular way to improve memory and concentration skills. This game is targeted at a younger audience.
 
-This is a memory card game which is created with the use of html, css and js. When you click a card, a picture shows up and then you have to click on another one to try to create a match. The pictures are related to our moodboard from assignment 2 part 1. 
+The game is built using only html, css and javascript.
 
-
-- Why the project is useful
-
-This project is useful 
-
-
-
-* How users can get started with the project
-* Where users can get help with your project
-* Which technology is used
-* Who maintains and contributes to the project
+The project is be public and can be found at [https://github.com/AdvancedCSS2023/assignment-2---css-games-group_12](https://github.com/AdvancedCSS2023/assignment-2---css-games-group_12) For help feel free to contact any of the repository contributors. This game is made by a group of web development students at NTNU Gjovik. The group consists of Petter, Emil and Tobias.
