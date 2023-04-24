@@ -38,8 +38,9 @@ function handleCheck() {
 checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
 // Select all elements with the class 'card-label' and store them in the 'cards' variable
 const cards = document.querySelectorAll('.card__label');
-// Create an array of image URLs
-const imgUrls = [ './images/african-village.jpeg',  './images/plane.jpeg',  './images/university.jpeg', './images/water.jpeg'];
+
+const img = [ './images/african-village.jpeg',  './images/plane.jpeg',  './images/university.jpeg', './images/water.jpeg'];
+
 
 // This code shuffels the order of the cards at random (the array), by defining the 'shuffle' function.
 function shuffle(array) {
@@ -58,12 +59,17 @@ function shuffle(array) {
 // Return the shuffled array
   return array;
 }
+
 // Calling the 'shuffel' function with the 'imgUrls' array as argument, which shuffles the array in place
 shuffle(imgUrls);
+
+
+shuffle(img);
+
 
 // Set the 'src' attribute of each image in the 'cards' array to a shuffled image URL
 // The modulus operator (%) ensures that the shuffled URL are repeated if there are more cards than URL
 for (let i = 0; i < cards.length; i++) {
-  cards[i].querySelector('img').src = imgUrls[i % imgUrls.length];
+  cards[i].querySelector('img').src = img[i % img.length];
 }
 
