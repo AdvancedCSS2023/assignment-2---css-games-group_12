@@ -4,5 +4,5 @@ This game is useful because it creates an interactive game that can provide ente
 
 The game is built using only html, css and javascript.
 
-The project is be public and can be found at For help feel free to contact any of the repository contributors. This game is made by a group of web development students at NTNU Gjovik. The group consists of Petter, Emil and Tobias. 
+The project is be public and can be found at https://github.com/AdvancedCSS2023/assignment-2---css-games-group_12 For help feel free to contact any of the repository contributors. This game is made by a group of web development students at NTNU Gjovik. The group consists of Petter, Emil and Tobias. 
 
