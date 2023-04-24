@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+:root{
+	--background-color-brown: #4b2e2e;
+	--border-container-color-gold: goldenrod;
+	--card-boarder-black: black;
+	--card-background-grey: #aaa;
+	--card-hover-white: rgb(69, 61, 61);
+	--card-label-color-white: rgba(255, 255, 255, 0.8);
+	--standard-border-radius: 10px;
+	--standard-width: 100%;
+	--standard-height: 100%;
+
+}
+
+  
+  @keyframes text-focus-in {
+	0% {
+	  letter-spacing: 1rem;
+	  filter: blur(12px);
+	  opacity: 0;
+	}
+	100% {
+	  letter-spacing: normal;
+	  filter: blur(0);
+	  opacity: 1;
+	}
+  }
+  
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+  text-align: center;
+  background-color: var(--background-color-brown);
+
+}
+
+.game__container{
+	border: solid var(--border-color-gold);
+	max-width: 80%;
+	max-height: 100%;
+	margin: auto;
+	background-image: url(/images/african-background.jpeg);
+	background-repeat: round;
+	border-radius: 10px;
+	box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+
+
+}
+
+.page__title {
+    text-align: center;
+    margin-top: 50px;
+	font-size: 40px;
+    font-family: 'Nabla', cursive;
+    margin-bottom: 2em;
+	text-transform: uppercase;
+	animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards;
+  }
+
+
+.card {
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border-radius: var(--standard-border-radius);
+	cursor: pointer;
+	position: relative;
+    display: inline-block;
+    background: var(--card-background-grey);
+    margin: 1em;
+	border: solid var(--card-boarder-black);
+	margin-top: 2em;
+}
+
+.card__img {
+	display: block;
+	width: var(--standard-width);
+	height: var(--standard-height);
+	object-fit: cover;
+}
+
+.card__checkbox {
+	display: none;
+}
+
+
+.card:hover {
+	background-color: var(--card-hover-white);
+}
+
+.card:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--standard-width);
+	height: var(--standard-height);
+	border-radius: var(--standard-border-radius);
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.card:hover:after {
+	opacity: 1;
+}
+
+.card__label {
+	display: block;
+	position: relative;
+	width: var(--standard-width);
+	height: var(--standard-height);
+	border-radius: var(--standard-border-radius);
+	overflow: hidden;
+}
+
+.card__label::after {
+    background: var(--card-label-color-white);
+    content: '';
+    height: var(--standard-height);
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: var(--standard-width);
+    z-index: 1;
+  }
+
+.card__label img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--standard-width);
+	height: var(--standard-height);
+	object-fit: cover;
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+	z-index: 2;
+}
+
+.card__checkbox:checked + label img {
+	opacity: 1;
+}
+
+.card__checkbox:checked ~ .card-checkbox:checked + label img {
+	opacity: 1;
+}
+
+.matched {
+	pointer-events: none;
+}
+
+@media (max-width: 768px) {
+	.game-container {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
+
+
+img#replay{
+	display: block;
+	margin: 2% auto;
+	max-height: 30%;
+	max-width: 30%;
+	cursor: pointer;
+	margin: 2% auto;
+	}
+
+	img#replay:hover{
+		animation: hover-jump 1s infinite;
+	   }
+	
+	@keyframes hover-jump {
+		0% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-10px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
