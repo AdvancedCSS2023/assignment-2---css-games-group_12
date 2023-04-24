@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
+@import "./animations";
+@import "./variables";
+@import "./animations";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+
+  background-color: $background-color-brown;
+}
+
+.game-container {
+  border: solid $border-container-color-gold;
+  max-width: 80%;
+  max-height: $standard-height;
+  margin: auto;
+  background-image: url(../images/african-background.jpeg);
+  background-repeat: round;
+  border-radius: 10px;
+}
+
+.page__title {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+  font-family: "Nabla", cursive;
+  margin-bottom: 2em;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: $standard-border-radius;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+
+  position: relative;
+  background: #aaa;
+  margin: 2em;
+  border: solid black;
+
+  background: $card-background-grey;
+  margin: 2em;
+  border: solid $card-boarder-black;
+}
+
+.card__img {
+  display: block;
+  width: $standard-width;
+  height: $standard-height;
+  object-fit: cover;
+}
+
+.card__checkbox {
+  display: none;
+}
+
+.card:hover {
+  background-color: $card-hover-white;
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $standard-width;
+  height: $standard-height;
+  border-radius: $standard-border-radius;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.card:hover:after {
+  opacity: 1;
+}
+
+.card__label {
+  display: block;
+  position: relative;
+  width: $standard-width;
+  height: $standard-height;
+  border-radius: $standard-border-radius;
+  overflow: hidden;
+}
+
+.card__label::after {
+  background: $card-label-color-white;
+  content: "";
+  height: $standard-height;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: $standard-width;
+  z-index: 1;
+}
+
+.card__label img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $standard-width;
+  height: $standard-height;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 2;
+}
+
+.card__checkbox:checked + label img {
+  opacity: 1;
+}
+
+.card__checkbox:checked ~ .card-checkbox:checked + label img {
+  opacity: 1;
+}
+
+.matched {
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .game-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+img#replay {
+  display: block;
+  margin: 2% auto;
+  max-height: 30%;
+  max-width: 30%;
+  cursor: pointer;
+  margin: 2% auto;
+}
+
+img#replay:hover {
+  animation: hover-jump 1s infinite;
+}
