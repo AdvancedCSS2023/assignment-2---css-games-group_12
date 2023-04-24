@@ -13,8 +13,6 @@
 
 }
 
-embed { display: none; }
-button:active + embed { display: block; }
   
   @keyframes text-focus-in {
 	0% {
@@ -45,9 +43,9 @@ body{
 
 .game__container{
 	border: solid var(--border-color-gold);
-	max-width: auto;
-	height: 50vh;
-	margin: 2em;
+	max-width: 80%;
+	max-height: 100%;
+	margin: auto;
 	background-image: url(/images/african-background.jpeg);
 	background-repeat: round;
 	border-radius: 10px;
@@ -68,8 +66,8 @@ body{
 
 
 .card {
-	width: 8em;
-	height: 8em;
+	width: 200px;
+	height: 200px;
 	margin: 10px;
 	border-radius: var(--standard-border-radius);
 	cursor: pointer;
@@ -78,7 +76,7 @@ body{
     background: var(--card-background-grey);
     margin: 1em;
 	border: solid var(--card-boarder-black);
-	margin-top: 8em;
+	margin-top: 2em;
 }
 
 .card__img {
