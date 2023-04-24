@@ -24,6 +24,12 @@
 
 body{
   text-align: center;
+
+  background-color: #4b2e2e; 
+
+}
+
+
   background-color: var(--background-color-brown);
 
 }
@@ -56,9 +62,16 @@ body{
 	cursor: pointer;
 	position: relative;
     display: inline-block;
+
+    position: relative;
+    background: #aaa;
+    margin: 2em;
+	border: solid black;
+
     background: var(--card-background-grey);
     margin: 2em;
 	border: solid var(--card-boarder-black);
+
 }
 
 .card__img {
