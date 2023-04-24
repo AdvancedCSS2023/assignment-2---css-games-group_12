@@ -14,8 +14,6 @@
 }
 
 
-
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -25,21 +23,18 @@
 body{
   text-align: center;
 
-  background-color: #4b2e2e; 
-
-}
-
-
   background-color: var(--background-color-brown);
 
 }
 
-.game__container{
+
+
+.game-container{
 	border: solid var(--border-color-gold);
 	max-width: 80%;
 	max-height: var(--standard-height);
 	margin: auto;
-	background-image: url(/images/african-background.jpeg);
+	background-image: url(./images/african-background.jpeg);
 	background-repeat: round;
 	border-radius: 10px;
 
