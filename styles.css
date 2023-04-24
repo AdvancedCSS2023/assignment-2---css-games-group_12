@@ -13,6 +13,8 @@
 
 }
 
+embed { display: none; }
+button:active + embed { display: block; }
   
   @keyframes text-focus-in {
 	0% {
