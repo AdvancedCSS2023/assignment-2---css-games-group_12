@@ -2,7 +2,7 @@ The project is a memory card game where the player needs to match pairs of cards
 
 This game is useful because it creates an interactive game that can provide entertainment and cognitive stimulation for users. Memory games are also a popular way to improve memory and concentration skills. This game is targeted at a younger audience. 
 
-The game is built using only html, css and javascrip.
+The game is built using only html, css and javascript.
 
-The project is be public and can be found at https://github.com/AdvancedCSS2023/assignment-2---css-games-group_12. For help feel free to contact any of the repository contributors. This game is made by a group of web development students at NTNU Gjovik. The group consists of Petter, Emil and Tobias. 
+The project is be public and can be found at For help feel free to contact any of the repository contributors. This game is made by a group of web development students at NTNU Gjovik. The group consists of Petter, Emil and Tobias. 
 
