@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory game</title>
+    <link rel="stylesheet" href="styles/styling.css">
+  </head>
+
+  <body>
+    <h1 class="page__title">African Themed Memory Game</h1>
+
+    <div class="game-container">
+      <div class="card">
+        <input type="checkbox" class="card__checkbox" id="card1" />
+        <label for="card1" class="card__label">
+          <img
+            src="./images/african-village.jpeg"
+            alt="Card 1"
+            class="card__img"
+          />
+        </label>
+      </div>
+      <div class="card">
+        <input type="checkbox" class="card__checkbox" id="card2" />
+        <label for="card2" class="card__label">
+          <img
+            src="./images/african-village.jpeg"
+            alt="Card 1"
+            class="card__img"
+          />
+        </label>
+      </div>
+      <div class="card">
+        <input type="checkbox" class="card__checkbox" id="card3" />
+        <label for="card3" class="card__label">
+          <img src="./images/plane.jpeg" alt="Card 2" class="card__img" />
+        </label>
+      </div>
+      <div class="card">
+        <input type="checkbox" class="card__checkbox" id="card4" />
+        <label for="card4" class="card__label">
+          <img src="./images/plane.jpeg" alt="Card 2" class="card__img" />
+        </label>
+      </div>
+      <div class="card">
+        <input type="checkbox" class="card__checkbox" id="card5" />
+        <label for="card5" class="card__label">
+          <img src="./images/university.jpeg" alt="Card 3" class="card__img" />
+        </label>
+      </div>
+      <div class="card">
+        <input type="checkbox" class="card__checkbox" id="card6" />
+        <label for="card6" class="card__label">
+          <img src="./images/university.jpeg" alt="Card 3" class="card__img" />
+        </label>
+      </div>
+      <div class="card">
+        <input type="checkbox" class="card__checkbox" id="card7" />
+        <label for="card7" class="card__label">
+          <img src="./images/water.jpeg" alt="Card 4" class="card__img" />
+        </label>
+      </div>
+      <div class="card">
+        <input type="checkbox" class="card__checkbox" id="card8" />
+        <label for="card8" class="card__label">
+          <img src="./images/water.jpeg" alt="Card 4" class="card__img" />
+        </label>
+      </div>
+    </div>
+  
+
+    <a href="#" onclick="location.href = location.href + '?t=' + Date.now()">
+      <img src="/images/replay.png" id="replay" alt="Play Again Icon" />
+    </a>
+
+    <script src="/script.js" type="text/javascript"></script>
+  </body>
+</html>
